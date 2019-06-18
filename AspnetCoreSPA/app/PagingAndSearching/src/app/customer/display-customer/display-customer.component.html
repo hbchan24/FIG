@@ -1,0 +1,26 @@
+  <div class="conatiner" style="padding-top:20px;">  
+    <div class="col-sm-5" style="padding-top:20px;padding-bottom:20px;" >  
+         <input class="form-control" type="text" placeholder="Search......." [(ngModel)]="filter" (ngModelChange)="onSearchValueChange($event)">        
+    </div>  
+  </div>  
+    <table class="table table-striped">  
+      <thead class="thead-dark">  
+        <tr>  
+          <th>FirstName</th>  
+          <th>LastName</th>  
+          <th>Email</th>  
+          <th>Phone1</th>  
+        </tr>  
+      </thead>  
+      <tbody>   
+        <tr *ngFor="let cust of customer.data |  filter:filter| paginate: { itemsPerPage: 5, currentPage: p, totalItems: total }">  
+          <td>{{cust.firstName}}</td>  
+          <td>{{cust.lastName}}</td>  
+          <td>{{cust.email}}</td>  
+          <td>{{cust.phone1}}</td>  
+        </tr>  
+      </tbody>  
+      <ul class="pagination">  
+          <pagination-controls (pageChange)="pageChanged($event)"></pagination-controls>  
+          </ul>  
+    </table>  
