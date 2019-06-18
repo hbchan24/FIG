@@ -65,16 +65,7 @@ namespace AspnetCoreSPATemplate
                     template: "{controller}/{action=Index}/{id?}");
             });
 
-            //app.UseSpa(spa =>
-            //{
-            //    spa.Options.SourcePath = "app";
-
-            //    if (env.IsDevelopment())
-            //    {
-            //        spa.UseProxyToSpaDevelopmentServer("http://localhost:5001");
-            //        //spa.UseAngularCliServer(npmScript: "start");
-            //    }
-            //});
+            
         }
     }
 }
