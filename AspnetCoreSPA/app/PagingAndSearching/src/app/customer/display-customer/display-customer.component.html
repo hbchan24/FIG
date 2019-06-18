@@ -14,8 +14,8 @@
       </thead>  
       <tbody>   
         <tr *ngFor="let cust of customer.data |  filter:filter| paginate: { itemsPerPage: 5, currentPage: p, totalItems: total }">  
-          <td>{{cust.firstName}}</td>  
-          <td>{{cust.lastName}}</td>  
+          <td>{{cust.first_name}}</td>  
+          <td>{{cust.last_name}}</td>  
           <td>{{cust.email}}</td>  
           <td>{{cust.phone1}}</td>  
         </tr>  
