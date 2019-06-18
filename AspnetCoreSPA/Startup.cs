@@ -1,3 +1,5 @@
+using AspnetCoreSPATemplate.Data;
+using AspnetCoreSPATemplate.Data.Implementation;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -29,7 +31,7 @@ namespace AspnetCoreSPATemplate
                     builder.WithOrigins("http://localhost:4200");
                 });
             });
-
+            services.AddScoped<IDataProvider, CSVDataProvider>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             // In production, the SPA files will be served from this directory
