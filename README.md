@@ -2,11 +2,12 @@
 
 ## Get started
 
-The SPA is located under the `app` folder.
+The SPA is located under the `app/pagingandsearching` folder.
 
 Then to start the dev server, run this command:
 
-`npm run dev`
+`npm start`
+Browse to `http://locahost:4200` for the UI
 
 Fire up the AspNetCore app from Visual Studio and browse to `http://locahost:5000`
 
