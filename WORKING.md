@@ -12,7 +12,8 @@
     
 # Additional nice to haves or features that you might suggest but do not have time to complete:
     Logging, as of now there is no logging implemented.
-    
+    Use mock framework for testing
+    Add dependency injection in testing
 # Time summary:
     Preparation: 2 hour 
     Coding: 5 hours(including test) 
