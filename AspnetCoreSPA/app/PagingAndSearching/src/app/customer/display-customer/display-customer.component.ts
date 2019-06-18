@@ -33,11 +33,7 @@ export class DisplayCustomerComponent implements OnInit {
     this.employeeService.GetCustomer(this.p,this.itemPerPage,searchStr).subscribe(
       response => {
         this.customer = response;
-        if(searchStr){
-          this.total = response.data.count;
-        }else{
-          this.total = response.total;
-        }
+        this.total = response.total;
         
         this.searchString = searchStr;
       }
